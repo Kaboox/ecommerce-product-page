@@ -80,16 +80,34 @@
 
     <main>
         <div class="slider">
-            <img src="src/images/image-product-1.jpg" alt="Shoes on the orange background">
+            <div class="big-image">
+                <img src="src/images/image-product-1.jpg" alt="Shoes on the orange background" class="big-image-img">
+            </div>
 
             <div class="images">
-                <img src="src/images/image-product-1-thumbnail.jpg" alt="" class="first-img">
-                <img src="src/images/image-product-2-thumbnail.jpg" alt="">
-                <img src="src/images/image-product-3-thumbnail.jpg" alt="">
-                <img src="src/images/image-product-4-thumbnail.jpg" alt="">
+                <div class="slider-image slider-image--active">
+                    <img src="src/images/image-product-1-thumbnail.jpg" alt="Shoes on the orange background" class="small-picture small-picture-first">
+                </div>
+                <div class="slider-image">
+                    <img src="src/images/image-product-2-thumbnail.jpg" alt="Shoes on the orange background" class="small-picture small-picture-second">
+                </div>
+                <div class="slider-image">
+                    <img src="src/images/image-product-3-thumbnail.jpg" alt="Shoes on the orange background" class="small-picture small-picture-third">
+                </div>
+                <div class="slider-image">
+                    <img src="src/images/image-product-4-thumbnail.jpg" alt="Shoes on the orange background" class="small-picture small-picture-fourth">
+                </div>
+                
             </div>
         </div>
-        <div class="photos"></div>
+
+        <div class="cart-display">
+            <h2>Cart</h2>
+            <div class="line"></div>
+            <div class="cart-content">
+                <p>Your cart is empty</p>
+            </div>
+        </div>
         <div class="main-content">
             <p class="company">sneaker company</p>
             <h2 class="sneaker-name">Fall Limited Edition Sneakers</h2>
@@ -107,7 +125,7 @@
             <div class="buy-buttons">
                 <button class="amount">
                     <p class="minus">-</p>
-                    <p class="item-amount">0</p>
+                    <p class="item-amount"></p>
                     <p class="plus">+</p>
                 </button>
                 <button class="add">
