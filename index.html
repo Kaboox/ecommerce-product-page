@@ -13,46 +13,38 @@
 
     <div class="wrapper">
         <nav>
-            <div class="mobile-nav">
-                <div class="mobile-nav__left">
+            <div class="nav-content">
+                <div class="mobile-nav">
                     <button class="burger">
                         <img src="src/images/icon-menu.svg" alt="three bars">
                     </button>
                     <div class="title">
                         <h1 class="nav-title">sneake<span>rs</span></h1>
                     </div>
-                </div>
-                <div class="mobile-nav__right">
-                    <div class="cart">
-                        <img src="src/images/icon-cart.svg" alt="cart icon" class="cart-icon">
-                    </div>
-                    <div class="avatar">
-                        <img src="src/images/image-avatar.png" alt="avatar photo" class="avatar-photo">
-                    </div>
-                </div>
-
-                <div class="mobile-menu">
-                    <div class="mobile-menu__content">
-                        <button class="close-menu">
-                            <img src="src/images/icon-close.svg" alt="">
-                        </button>
     
-                        <ul class="mobile-menu-text">
-                            <li>Collections</li>
-                            <li>Men</li>
-                            <li>Women</li>
-                            <li>About</li>
-                            <li>Contact</li>
-                        </ul>
+    
+    
+                    <div class="mobile-menu">
+                        <div class="mobile-menu__content">
+                            <button class="close-menu">
+                                <img src="src/images/icon-close.svg" alt="">
+                            </button>
+    
+                            <ul class="mobile-menu-text">
+                                <li>Collections</li>
+                                <li>Men</li>
+                                <li>Women</li>
+                                <li>About</li>
+                                <li>Contact</li>
+                            </ul>
+                        </div>
                     </div>
+    
+    
                 </div>
-
-
-            </div>
-
-            <div class="desktop-nav">
-                <div class="desktop-nav__content">
-                    <div class="desktop-nav-left">
+    
+                <div class="desktop-nav">
+                    <div class="desktop-nav--content">
                         <h1 class="title">sneakers</h1>
                         <ul>
                             <li>Collections</li>
@@ -62,18 +54,41 @@
                             <li>Contact</li>
                         </ul>
                     </div>
-                    <div class="desktop-nav-right">
-                        <div class="cart">
-                            <img src="src/images/icon-cart.svg" alt="cart icon">
-                        </div>
-                        <div class="avatar">
-                            <img src="src/images/image-avatar.png" alt="avatar photo" class="avatar-photo">
+                    
+                </div>
+                
+                <div class="nav-right">
+                    <div class="cart">
+                        <img src="src/images/icon-cart.svg" alt="cart icon" class="cart-icon">
+                        <div class="cart-display">
+                            <h2>Cart</h2>
+                            <div class="cart-line"></div>
+                            <div class="cart-content">
+                                <p class="empty-cart"></p>
+                                <div class="not-empty-cart">
+                                    <div class="not-empty-cart__content">
+                                        <img src="src/images/image-product-1-thumbnail.jpg" alt="" class="product-pic">
+                                    <div class="shoe-info">
+                                        <p class="name">Fall Limited Edition Sneakers</p>
+                                        <div class="purchase-info">
+                                            <p>$125.00 x <span class="quantity"></span>  <span class="final-amount"> </span></p>
+                                        </div>
+                                    </div>
+                                    <div class="delete">
+                                        <img src="src/images/icon-delete.svg" alt="">
+                                    </div>
+                                    </div>
+                                    <button class="checkout">Checkout</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="avatar">
+                        <img src="src/images/image-avatar.png" alt="avatar photo" class="avatar-photo">
+                    </div>
                 </div>
-                <div class="line"></div>
-
             </div>
+            <div class="line"></div>
         </nav>
 
     </div>
@@ -86,28 +101,26 @@
 
             <div class="images">
                 <div class="slider-image slider-image--active">
-                    <img src="src/images/image-product-1-thumbnail.jpg" alt="Shoes on the orange background" class="small-picture small-picture-first">
+                    <img src="src/images/image-product-1-thumbnail.jpg" alt="Shoes on the orange background"
+                        class="small-picture small-picture-first">
                 </div>
                 <div class="slider-image">
-                    <img src="src/images/image-product-2-thumbnail.jpg" alt="Shoes on the orange background" class="small-picture small-picture-second">
+                    <img src="src/images/image-product-2-thumbnail.jpg" alt="Shoes on the orange background"
+                        class="small-picture small-picture-second">
                 </div>
                 <div class="slider-image">
-                    <img src="src/images/image-product-3-thumbnail.jpg" alt="Shoes on the orange background" class="small-picture small-picture-third">
+                    <img src="src/images/image-product-3-thumbnail.jpg" alt="Shoes on the orange background"
+                        class="small-picture small-picture-third">
                 </div>
                 <div class="slider-image">
-                    <img src="src/images/image-product-4-thumbnail.jpg" alt="Shoes on the orange background" class="small-picture small-picture-fourth">
+                    <img src="src/images/image-product-4-thumbnail.jpg" alt="Shoes on the orange background"
+                        class="small-picture small-picture-fourth">
                 </div>
-                
+
             </div>
         </div>
 
-        <div class="cart-display">
-            <h2>Cart</h2>
-            <div class="line"></div>
-            <div class="cart-content">
-                <p>Your cart is empty</p>
-            </div>
-        </div>
+        
         <div class="main-content">
             <p class="company">sneaker company</p>
             <h2 class="sneaker-name">Fall Limited Edition Sneakers</h2>

@@ -11,12 +11,16 @@ const body = document.querySelector('body')!;
 
 const cartBtns = document.querySelectorAll('.cart')!
 const cart = document.querySelector('.cart-display')! as HTMLDivElement
+const cartContent = document.querySelector('.cart-content')!;
+const quantity = document.querySelector('.quantity')!
+const finalAmount = document.querySelector('.final-amount')!
 
 const addToCartBtn = document.querySelector('.add')!;
 const plus = document.querySelector('.plus')!;
 const minus = document.querySelector('.minus')!;
-const pairAmount = document.querySelector('.item-amount')!
-let amount = 0;
+const pairAmount = document.querySelector('.item-amount')! as HTMLParagraphElement;
+let amount:number = 0;
+let amountInCart:number = 0;
 
 
 const smallPicBoxes = document.querySelectorAll('.slider-image')
@@ -90,6 +94,32 @@ const decreaseAmount = () => {
     }
 }
 
+const checkAmount = () => {
+    if (+(pairAmount.textContent)! > 0) {
+        addToCart()
+    }
+}
+
+const addToCart = () => {
+    if (amountInCart + amount < 11) {
+        amountInCart += amount
+    }
+    checkCartAmount()
+}
+
+const checkCartAmount = () => {
+
+
+    if (amountInCart == 0) {
+        (cartContent.querySelector('.not-empty-cart') as HTMLDivElement)!.style.display = 'none';
+        (cartContent.querySelector('.empty-cart'))!.textContent = 'Your cart is empty.';
+    } else {
+        (cartContent.querySelector('.not-empty-cart') as HTMLDivElement)!.style.display = 'flex';
+        quantity.textContent = amountInCart.toString()
+        finalAmount.textContent = `$${((+quantity.textContent * 125).toFixed(2)).toString()}`
+    }
+}
+
 
 
 burgerBtn?.addEventListener('click', () => {
@@ -111,6 +141,8 @@ for (const cartBtn of cartBtns) {
         }
     })
 }
+
+addToCartBtn.addEventListener('click', checkAmount);
 
 plus?.addEventListener('click', increaseAmount)
 minus?.addEventListener('click', decreaseAmount)
