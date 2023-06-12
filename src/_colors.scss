@@ -1,5 +1,15 @@
 :root {
     --white: rgb(255,255,255);
+    --black: rgb(0,0,0);
     --orange: rgb(224, 139, 10);
+    --light-orange: rgb(255, 140, 0);
     --gray-text: rgba(76, 75, 75, 0.775);
+    --shadow: rgba(10,10,10,.7);
+    --mobile-menu-shadow: rgba(10,10,10,.6);
+    --gallery-shadow: rgba(10, 10, 10, 0.8);
+    --cart-box-shadow: rgba(100, 100, 100, 0.5);
+    --desktop-nav-line: rgba(240, 240, 240, 0.9);
+    --cart-text: rgb(95, 95, 95);
+    --cart-content-text: rgba(10, 10, 10, 0.5);
+    --cart-line: rgba(10, 10, 10, 0.1);
 }

@@ -1,9 +1,10 @@
 {
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "webpack"
+    "build": "webpack --config webpack.config.prod.js"
   },
   "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.8.1",
     "node-sass": "^9.0.0",
     "sass-loader": "^13.3.1",
