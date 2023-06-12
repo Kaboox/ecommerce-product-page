@@ -60,31 +60,34 @@
                 <div class="nav-right">
                     <div class="cart">
                         <img src="src/images/icon-cart.svg" alt="cart icon" class="cart-icon">
-                        <div class="cart-display">
-                            <h2>Cart</h2>
-                            <div class="cart-line"></div>
-                            <div class="cart-content">
-                                <p class="empty-cart"></p>
-                                <div class="not-empty-cart">
-                                    <div class="not-empty-cart__content">
-                                        <img src="src/images/image-product-1-thumbnail.jpg" alt="" class="product-pic">
-                                    <div class="shoe-info">
-                                        <p class="name">Fall Limited Edition Sneakers</p>
-                                        <div class="purchase-info">
-                                            <p>$125.00 x <span class="quantity"></span>  <span class="final-amount"> </span></p>
-                                        </div>
-                                    </div>
-                                    <div class="delete">
-                                        <img src="src/images/icon-delete.svg" alt="">
-                                    </div>
-                                    </div>
-                                    <button class="checkout">Checkout</button>
-                                </div>
-                            </div>
+                        <div class="active-cart">
+                            <p class="amount-in-cart"></p>
                         </div>
                     </div>
                     <div class="avatar">
                         <img src="src/images/image-avatar.png" alt="avatar photo" class="avatar-photo">
+                    </div>
+                    <div class="cart-display">
+                        <h2>Cart</h2>
+                        <div class="cart-line"></div>
+                        <div class="cart-content">
+                            <p class="empty-cart"></p>
+                            <div class="not-empty-cart">
+                                <div class="not-empty-cart__content">
+                                    <img src="src/images/image-product-1-thumbnail.jpg" alt="" class="product-pic">
+                                <div class="shoe-info">
+                                    <p class="name">Fall Limited Edition Sneakers</p>
+                                    <div class="purchase-info">
+                                        <p>$125.00 x <span class="quantity"></span>  <span class="final-amount"> </span></p>
+                                    </div>
+                                </div>
+                                <div class="delete">
+                                    <img src="src/images/icon-delete.svg" alt="">
+                                </div>
+                                </div>
+                                <button class="checkout">Checkout</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -93,10 +96,55 @@
 
     </div>
 
+    <div class="desktop-gallery">
+        <div class="desktop-gallery__content">
+            <button class="close-gallery">
+                <img src="src/images/icon-close.svg" alt="">
+            </button>
+            <div class="main-img">
+                <img src="src/images/image-product-1.jpg" alt="" class="main-gallery-img">
+                <div class="arrows">
+                    <div class="previous-gallery arrow-gallery">
+                        <img src="src/images/icon-previous.svg" alt="left arrow">
+                    </div>
+                    <div class="next-gallery arrow-gallery">
+                        <img src="src/images/icon-next.svg" alt="right arrow">
+                    </div>
+                </div>
+            </div>
+            <div class="images">
+                <div class="gallery-image gallery-image-first gallery-image--active">
+                    <img src="src/images/image-product-1-thumbnail.jpg" alt="Shoes on the orange background"
+                        class="small-gallery-picture small-picture-first">
+                </div>
+                <div class="gallery-image gallery-image-second">
+                    <img src="src/images/image-product-2-thumbnail.jpg" alt="Shoes on the orange background"
+                        class="small-gallery-picture small-picture-second">
+                </div>
+                <div class="gallery-image gallery-image-third">
+                    <img src="src/images/image-product-3-thumbnail.jpg" alt="Shoes on the orange background"
+                        class="small-gallery-picture small-picture-third">
+                </div>
+                <div class="gallery-image gallery-image-fourth">
+                    <img src="src/images/image-product-4-thumbnail.jpg" alt="Shoes on the orange background"
+                        class="small-gallery-picture small-picture-fourth">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <main>
         <div class="slider">
             <div class="big-image">
                 <img src="src/images/image-product-1.jpg" alt="Shoes on the orange background" class="big-image-img">
+                <div class="arrows">
+                    <div class="previous arrow">
+                        <img src="src/images/icon-previous.svg" alt="left arrow">
+                    </div>
+                    <div class="next arrow">
+                        <img src="src/images/icon-next.svg" alt="right arrow">
+                    </div>
+                </div>
             </div>
 
             <div class="images">
@@ -149,6 +197,8 @@
         </div>
         </div>
 
+        
+</main>
 
 </body>
 
