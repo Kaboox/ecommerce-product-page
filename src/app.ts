@@ -38,20 +38,6 @@ const mainGalleryPic = document.querySelector('.main-gallery-img')! as HTMLImage
 const galleryArrows = document.querySelectorAll('.arrow-gallery')!;
 const smallGalleryPics = document.querySelectorAll('.gallery-image')!;
 
-// const imageValues = {
-// 	firstImg: {
-// 		path: "src/images/image-product-1.jpg",
-// 	},
-// 	secondImg: {
-// 		path: "/src/images/image-product-2.jpg",
-// 	},
-// 	thirdImg: {
-// 		path: "../src/images/image-product-3.jpg",
-// 	},
-// 	fourthImg: {
-// 		path: "../src/images/image-product-4.jpg",
-// 	},
-// };
 
 const imgPaths:string[] = ["src/images/image-product-1.jpg",
 "src/images/image-product-2.jpg",
