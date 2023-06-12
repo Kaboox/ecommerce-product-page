@@ -40,10 +40,10 @@ const smallGalleryPics = document.querySelectorAll('.gallery-image')
 
 const imageValues = {
 	firstImg: {
-		path: "../src/images/image-product-1.jpg",
+		path: "src/images/image-product-1.jpg",
 	},
 	secondImg: {
-		path: "../src/images/image-product-2.jpg",
+		path: "/src/images/image-product-2.jpg",
 	},
 	thirdImg: {
 		path: "../src/images/image-product-3.jpg",
