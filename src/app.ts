@@ -203,6 +203,7 @@ const slideImages = (e:Event) => {
 }
 
 const searchImgIndex = (pic: HTMLImageElement) => {
+	console.log((pic as HTMLImageElement).src);
     return imgPaths.indexOf((pic as HTMLImageElement).src)
 }
 
