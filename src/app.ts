@@ -38,20 +38,20 @@ const mainGalleryPic = document.querySelector('.main-gallery-img')! as HTMLImage
 const galleryArrows = document.querySelectorAll('.arrow-gallery')!;
 const smallGalleryPics = document.querySelectorAll('.gallery-image')!;
 
-const imageValues = {
-	firstImg: {
-		path: "src/images/image-product-1.jpg",
-	},
-	secondImg: {
-		path: "/src/images/image-product-2.jpg",
-	},
-	thirdImg: {
-		path: "../src/images/image-product-3.jpg",
-	},
-	fourthImg: {
-		path: "../src/images/image-product-4.jpg",
-	},
-};
+// const imageValues = {
+// 	firstImg: {
+// 		path: "src/images/image-product-1.jpg",
+// 	},
+// 	secondImg: {
+// 		path: "/src/images/image-product-2.jpg",
+// 	},
+// 	thirdImg: {
+// 		path: "../src/images/image-product-3.jpg",
+// 	},
+// 	fourthImg: {
+// 		path: "../src/images/image-product-4.jpg",
+// 	},
+// };
 
 const imgPaths:string[] = ["src/images/image-product-1.jpg",
 "src/images/image-product-2.jpg",
@@ -259,16 +259,16 @@ for (const pic of smallGalleryPics) {
 	pic.addEventListener('click', () => {
 		console.log(pic);
 		if (pic.classList.contains("gallery-image-first")) {
-			handlePickChange(pic, imageValues.firstImg.path, false);
+			handlePickChange(pic, imgPaths[0], false);
 		}
 		if (pic.classList.contains("gallery-image-second")) {
-			handlePickChange(pic, imageValues.secondImg.path, false);
+			handlePickChange(pic, imgPaths[1], false);
 		}
 		if (pic.classList.contains("gallery-image-third")) {
-			handlePickChange(pic, imageValues.thirdImg.path, false);
+			handlePickChange(pic, imgPaths[2], false);
 		}
 		if (pic.classList.contains("gallery-image-fourth")) {
-			handlePickChange(pic, imageValues.fourthImg.path, false);
+			handlePickChange(pic, imgPaths[3], false);
 		}
 	})
 }
