@@ -605,6 +605,7 @@ main {
 				font-weight: bold;
 				cursor: pointer;
 				transition: opacity 0.3s;
+				box-shadow: 0px 5px 10px var(--orange);
 			}
 
 			.add:hover {
