@@ -90,16 +90,16 @@ const handlePickChange = (pic: Element, path: string, big: boolean) => {
 for (const pic of smallPics) {
 	pic.addEventListener("click", () => {
 		if (pic.classList.contains("small-picture-first")) {
-			handlePickChange(pic, imageValues.firstImg.path, true);
+			handlePickChange(pic, imgPaths[0], true);
 		}
 		if (pic.classList.contains("small-picture-second")) {
-			handlePickChange(pic, imageValues.secondImg.path, true);
+			handlePickChange(pic, imgPaths[1], true);
 		}
 		if (pic.classList.contains("small-picture-third")) {
-			handlePickChange(pic, imageValues.thirdImg.path, true);
+			handlePickChange(pic, imgPaths[2], true);
 		}
 		if (pic.classList.contains("small-picture-fourth")) {
-			handlePickChange(pic, imageValues.fourthImg.path, true);
+			handlePickChange(pic, imgPaths[3], true);
 		}
 	});
 }
