@@ -38,6 +38,8 @@ const mainGalleryPic = document.querySelector('.main-gallery-img')! as HTMLImage
 const galleryArrows = document.querySelectorAll('.arrow-gallery')!;
 const smallGalleryPics = document.querySelectorAll('.gallery-image')!;
 
+console.log(arrows);
+
 
 const imgPaths:string[] = ["src/images/image-product-1.jpg",
 "src/images/image-product-2.jpg",
