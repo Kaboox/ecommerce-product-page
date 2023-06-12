@@ -53,10 +53,10 @@ const imageValues = {
 	},
 };
 
-const imgPaths:string[] = ["http://localhost:8080/src/images/image-product-1.jpg",
-"http://localhost:8080/src/images/image-product-2.jpg",
-"http://localhost:8080/src/images/image-product-3.jpg",
-"http://localhost:8080/src/images/image-product-4.jpg"];
+const imgPaths:string[] = ["src/images/image-product-1.jpg",
+"src/images/image-product-2.jpg",
+"src/images/image-product-3.jpg",
+"/src/images/image-product-4.jpg"];
 
 
 // clears active states on slider images
