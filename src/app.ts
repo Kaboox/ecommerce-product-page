@@ -28,15 +28,15 @@ let amountInCart: number = 0;
 let imgIndex = 0;
 let galleryImgIndex = 0;
 
-const arrows = document.querySelectorAll('.arrow')
-const smallPicBoxes = document.querySelectorAll(".slider-image");
-const smallPics = document.querySelectorAll(".small-picture");
+const arrows = document.querySelectorAll('.arrow')!;
+const smallPicBoxes = document.querySelectorAll(".slider-image")!;
+const smallPics = document.querySelectorAll(".small-picture")!;
 
 const dekstopGallery = document.querySelector('.desktop-gallery')! as HTMLDivElement;
 const closeGallery = document.querySelector('.close-gallery')!;
 const mainGalleryPic = document.querySelector('.main-gallery-img')! as HTMLImageElement;
-const galleryArrows = document.querySelectorAll('.arrow-gallery')
-const smallGalleryPics = document.querySelectorAll('.gallery-image')
+const galleryArrows = document.querySelectorAll('.arrow-gallery')!;
+const smallGalleryPics = document.querySelectorAll('.gallery-image')!;
 
 const imageValues = {
 	firstImg: {
@@ -203,8 +203,7 @@ const slideImages = (e:Event) => {
 }
 
 const searchImgIndex = (pic: HTMLImageElement) => {
-	console.log((pic as HTMLImageElement).src);
-    return imgPaths.indexOf((pic as HTMLImageElement).src)
+    return imgPaths.indexOf(pic.getAttribute('src')!);
 }
 
 addToCartBtn.addEventListener("click", checkAmount);
