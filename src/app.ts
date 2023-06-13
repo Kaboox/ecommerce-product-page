@@ -66,12 +66,12 @@ const handlePickChange = (pic: Element, path: string, big: boolean) => {
 		const box = pic.closest(".slider-image");
 		clearActiveStates(true);
 		box?.classList.add("slider-image--active");
-		bigPicture.setAttribute("src", path);
+		bigPicture.src = path;
 	} else {
 		const box = pic.closest('.gallery-image');
 		clearActiveStates(false)
 		box?.classList.add('gallery-image--active')
-		mainGalleryPic.setAttribute('src', path)
+		mainGalleryPic.src = path;
 	}
 };
 
