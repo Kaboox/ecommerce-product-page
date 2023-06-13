@@ -224,6 +224,7 @@ const prepareGallery = () => {
 }
 
 for (const arrow of galleryArrows) {
+	console.log(arrow);
 	arrow.addEventListener('click', (e:Event) => {
 		galleryImgIndex = searchImgIndex(mainGalleryPic)
 		if (((e.target)! as HTMLDivElement).classList.contains('next-gallery')) {
