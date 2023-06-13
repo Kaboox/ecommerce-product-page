@@ -41,10 +41,10 @@ const smallGalleryPics = document.querySelectorAll('.gallery-image')!;
 console.log(arrows);
 
 
-const imgPaths:string[] = ["src/images/image-product-1.jpg",
-"src/images/image-product-2.jpg",
-"src/images/image-product-3.jpg",
-"src/images/image-product-4.jpg"];
+const imgPaths:string[] = ["src\images\image-product-1.jpg",
+"src\images\image-product-2.jpg",
+"src\images\image-product-3.jpg",
+"src\images\image-product-4.jpg"];
 
 
 // clears active states on slider images
@@ -179,6 +179,7 @@ cartBtn.addEventListener("click", () => {
 // slider
 const slideImages = (e:Event) => { 
     imgIndex = searchImgIndex(bigPicture);
+	console.log(((e.target)! as HTMLDivElement).classList.contains('next'));
     if (((e.target)! as HTMLDivElement).classList.contains('next')) {
         bigPicture.setAttribute('src', imgPaths[(imgIndex + 1)%4]) 
     } else {
@@ -191,6 +192,7 @@ const slideImages = (e:Event) => {
 }
 
 const searchImgIndex = (pic: HTMLImageElement) => {
+	console.log(pic.getAttribute('src')!);
     return imgPaths.indexOf(pic.getAttribute('src')!);
 }
 
