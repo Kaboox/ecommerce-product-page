@@ -41,10 +41,10 @@ const smallGalleryPics = document.querySelectorAll('.gallery-image')!;
 console.log(arrows);
 
 
-const imgPaths:string[] = ["./src/images/image-product-1.jpg",
-"./src/images/image-product-2.jpg",
-"./src/images/image-product-3.jpg",
-"./src/images/image-product-4.jpg"];
+const imgPaths:string[] = ["https://kaboox.github.io/ecommerce-product-page/src/images/image-product-1.jpg",
+"https://kaboox.github.io/ecommerce-product-page/src/images/image-product-2.jpg",
+"https://kaboox.github.io/ecommerce-product-page/src/images/image-product-3.jpg",
+"https://kaboox.github.io/ecommerce-product-page/src/images/image-product-4.jpg"];
 
 
 // clears active states on slider images
